@@ -24,6 +24,12 @@ set completeopt=menuone,noinsert,noselect
 set signcolumn=yes
 set colorcolumn=80
 
+" Set colorscheme for the nvim
+colorscheme=gruvbox
+" Let the background image be nothing
+highlight Normal guibg=none
+
+" Settings for NVIM autocomplete
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
 set updatetime=300
@@ -52,10 +58,6 @@ else
 endif
 
 
-
-
-
-
 syntax enable
 
 " colorscheme evening
@@ -76,6 +78,7 @@ call plug#begin(stdpath('config') . '/plugged')
  Plug 'mhinz/vim-startify'
  Plug 'vim-airline/vim-airline'
  Plug 'vim-airline/vim-airline-themes'
+ Plug 'gruvbox-community/gruvbox'
  " Use release branch (recommend)
  Plug 'neoclide/coc.nvim', {'branch': 'release'} 
 call plug#end()
