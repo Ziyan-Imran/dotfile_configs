@@ -5,13 +5,13 @@ local lsp = require('lsp-zero').preset({
   suggest_lsp_servers = false,
 })
 
-
 lsp.ensure_installed( {
 	'eslint',
 	'tsserver',
 	'pyright',
 	'rust_analyzer',
 })
+
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -49,3 +49,12 @@ end)
 lsp.nvim_workspace()
 
 lsp.setup()
+
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,
+    update_in_insert = false,
+    underline = true,
+    severity_sort = false,
+    float = true,
+})

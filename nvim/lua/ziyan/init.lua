@@ -1,2 +1,2 @@
-require("ziyan.remap")
 require("ziyan.set")
+require("ziyan.remap")
