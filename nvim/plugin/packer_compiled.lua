@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/ziyan/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/home/ziyan/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/ziyan/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -155,10 +160,9 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/ziyan/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
+    loaded = true,
+    path = "/home/ziyan/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -194,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ziyan/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["zoxide.vim"] = {
+    loaded = true,
+    path = "/home/ziyan/.local/share/nvim/site/pack/packer/start/zoxide.vim",
+    url = "https://github.com/nanotee/zoxide.vim"
   }
 }
 

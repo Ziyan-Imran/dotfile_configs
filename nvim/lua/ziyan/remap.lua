@@ -15,7 +15,7 @@ vim.keymap.set("n", "<C-k>", "<C-W>k")
 vim.keymap.set("n", "<C-l>", "<C-W>l")
 
 -- Increase/Decrease Height/Width of Current Vim Windows
-vim.keymap.set("n", "<leader>wi", "30<C-W>>")
-vim.keymap.set("n", "<leader>wd", "30<C-W><")
-vim.keymap.set("n", "<leader>hi", "20<C-W>+")
-vim.keymap.set("n", "<leader>hd", "20<C-W>-")
+vim.keymap.set("n", "<leader>wi", "10<C-W>>")
+vim.keymap.set("n", "<leader>wd", "10<C-W><")
+vim.keymap.set("n", "<leader>hi", "10<C-W>+")
+vim.keymap.set("n", "<leader>hd", "10<C-W>-")

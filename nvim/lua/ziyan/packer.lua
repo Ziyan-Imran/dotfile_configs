@@ -6,16 +6,15 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
-  
+ 
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({ 
-	  'rose-pine/neovim', 
+  use({
+	  'rose-pine/neovim',
 	  as = 'rose-pine' })
   	vim.cmd('colorscheme rose-pine')
 
@@ -60,5 +59,9 @@ return require('packer').startup(function(use)
 	  }
   }
 
-
+  use 'nanotee/zoxide.vim'
+  use 'nvim-tree/nvim-web-devicons'
+  use {
+    'romgrk/barbar.nvim', requires = 'nvim-web-devicons'
+  }
 end)
