@@ -64,4 +64,13 @@ return require('packer').startup(function(use)
   use {
     'romgrk/barbar.nvim', requires = 'nvim-web-devicons'
   }
+
+  -- LSP lines provides a better display to show lsp information
+  -- Place it after the nvim-lspconfig
+  use({
+      "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+      config = function()
+          require("lsp_lines").setup()
+      end,
+  })
 end)
