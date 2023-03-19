@@ -16,4 +16,4 @@ local function toggle_diagnostics()
   end
 end
 
-vim.keymap.set("n", "<Leader>ui", toggle_diagnostics, { desc = "Toggle [i]nline diagnostic type" })
+vim.keymap.set("n", "<Leader>li", toggle_diagnostics, { desc = "Toggle [i]nline diagnostic type" })
