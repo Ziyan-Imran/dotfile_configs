@@ -73,4 +73,5 @@ return require('packer').startup(function(use)
           require("lsp_lines").setup()
       end,
   })
+  use 'rstacruz/vim-closer'
 end)
