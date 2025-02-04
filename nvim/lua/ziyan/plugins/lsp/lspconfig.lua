@@ -5,6 +5,9 @@ return {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 		{ "folke/neodev.nvim", opts = {} },
+		-- Adding in Mason config dependencies to ensure LSP is correctly setup
+		{ "williamboman/mason.nvim" },
+		{ "williamboman/mason-lspconfig.nvim" },
 	},
 	config = function()
 		-- import lspconfig plugin
@@ -112,6 +115,7 @@ return {
 				lspconfig["rust_analyzer"].setup({
 					capabilities = capabilities,
 					filetypes = { "rust", "rs" },
+					root_dir = lspconfig.util.root_pattern("Cargo.toml"),
 				})
 			end,
 			["emmet_ls"] = function()

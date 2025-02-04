@@ -20,7 +20,7 @@ keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Page Jump Up with consistent curso
 
 -- Keep search items in the middle
 keymap.set("n", "n", "nzzzv", { desc = "Goto next search item" })
-keymap.set("n", "N", "nzzzv", { desc = "Goto previous search item" })
+keymap.set("n", "N", "Nzzzv", { desc = "Goto previous search item" })
 
 -- PasteOver remap
 keymap.set("x", "<leader>p", '"_dp', { desc = "PasteOver remap" })
